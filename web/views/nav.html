@@ -6,6 +6,7 @@
   </b-navbar>
 
 
+  <script type="text/x-template" id="nav-template">
   <b-navbar toggleable="lg" type="dark" variant="dark">
       <b-navbar-brand href="#">TF Construction Inc</b-navbar-brand>
     
@@ -15,36 +16,37 @@
 
         <b-navbar-nav class="ml-auto">
           <b-nav-item right>
-            HOME
+              <router-link to="/settings/emails">HOME</router-link>
           </b-nav-item>
           
           <b-nav-item right>
-          
-            DRYWALL
-          </b-nav-item>
-
-          <b-nav-item right>
-        
-            LAMINATE FLOORING
+            <router-link to="/settings/profile">DRYWALL</router-link>
+            
           </b-nav-item>
 
           <b-nav-item right>
-          
-            ACOUSTIC CEILING
+            <router-link to="/settings/emails">LAMINATE FLOORING</router-link>
+            
           </b-nav-item>
 
           <b-nav-item right>
-          
-            REVIEWS 
+            <router-link to="/settings/emails">ACOUSTIC CEILING</router-link>
+            
+          </b-nav-item>
+
+          <b-nav-item right>
+            <router-link to="/settings/emails">REVIEWS</router-link>
+             
           </b-nav-item>
 
           <b-nav-item right> 
-          
-            CONTACT US 
+            <router-link to="/settings/emails">CONTACT US</router-link>
+             
           </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
+</script>
 
 
 
