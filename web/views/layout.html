@@ -5,12 +5,20 @@
 </head>
 
 <body>
-    
+  <div id="app">
   {% include 'nav.html' %}
 
   {% block content %}{% endblock %}
 
   {% include 'contact.html' %}
+  </div>
+
+  <script>
+      window.app = new Vue({
+        el: '#app',
+        data: {}
+      })
+    </script>
   
 </body>
 </html>
