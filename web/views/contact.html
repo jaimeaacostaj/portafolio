@@ -1,4 +1,4 @@
-<template>
+<template id="contact"> 
   <div>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
       <b-form-group
@@ -51,18 +51,12 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        form: {
-          email: '',
-          name: '',
-          food: null,
-          checked: []
-        },
-        foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
-        show: true
-      }
+  window.app = new Vue({
+    el: '#contact',
+    data: {
+      
+      
+
     },
     methods: {
       onSubmit(evt) {
@@ -83,5 +77,6 @@
         })
       }
     }
-  }
+
+  })
 </script>
