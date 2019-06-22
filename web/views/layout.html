@@ -24,7 +24,11 @@
     }
 const UserSettings = {
 	template: `
-
+<div class="us">
+  
+  <UserSettingsNav/>
+  
+</div>
   `,
   components: { UserSettingsNav }
 }
@@ -58,7 +62,7 @@ const router = new VueRouter({
   routes: [
     { path: '/',
       // You could also have named views at tho top
-      component: UserSettingsNav,
+      component: UserSettings,
       children: [{
       	path: '',
         component: UserEmailsSubscriptions
