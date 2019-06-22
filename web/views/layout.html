@@ -59,14 +59,14 @@ const UserProfilePreview = {
 const router = new VueRouter({
   mode: 'history',
   routes: [
-    { path: '/settings',
+    { path: '/',
       // You could also have named views at tho top
       component: UserSettings,
       children: [{
-      	path: 'emails',
+      	path: '',
         component: UserEmailsSubscriptions
       }, {
-      	path: 'profile',
+      	path: 'drywall',
         components: {
         	default: UserProfile,
           helper: UserProfilePreview
