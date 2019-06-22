@@ -34,28 +34,28 @@ const UserSettings = {
   components: { UserSettingsNav }
 }
 
-const UserEmailsSubscriptions = {
-	template: `
-<div>
-	<h3>Email Subscriptions</h3>
-</div>
-  `
+const HOME = {
+	template: '#home-template'
 }
 
-const UserProfile = {
-	template: `
-<div>
-	<h3>Edit your profile</h3>
-</div>
-  `
+const DRYWALL = {
+	template: '#drywall-template'
 }
 
-const UserProfilePreview = {
-	template: `
-<div>
-	<h3>Preview of your profile</h3>
-</div>
-  `
+const LAMINATE = {
+	template: '#laminate-template'
+}
+
+const ACOUSTIC = {
+	template: '#acoustic-template'
+}
+
+const REVIEWS = {
+	template: '#reviews-template'
+}
+
+const CONTACT = {
+	template: '#contact-template'
 }
 
 const router = new VueRouter({
@@ -66,12 +66,29 @@ const router = new VueRouter({
       component: UserSettings,
       children: [{
       	path: '',
-        component: UserEmailsSubscriptions
-      }, {
+        component: HOME
+      }, 
+      {
       	path: 'drywall',
+        component: DRYWALL
+      }, 
+      {
+      	path: 'laminate',
+        component: LAMINATE
+      }, 
+      {
+      	path: 'acoustic',
+        component: ACOUSTIC
+      }, 
+      {
+      	path: 'reviews',
+        component: REVIEWS
+      }, 
+      {
+      	path: 'contact',
         components: {
-        	default: UserProfile,
-          helper: UserProfilePreview
+        	default: CONTACT,
+          helper: HOME
         }
       }]
     }
