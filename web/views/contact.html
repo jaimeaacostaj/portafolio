@@ -1,8 +1,9 @@
 
 
 <script type="text/x-template" id="contact-template">
-  <b-container class="bv-example-row">
+  <b-container>
 
+    <b-row>
     <h2>Contact Us</h2>
     <p>
       Thank you for visiting our website. TF Construction, Inc. provides drywall and luxury vinyl tile flooring installation services in the Omaha, Nebraska area. 
@@ -10,7 +11,7 @@
     <p>
       Please use the form on this page to email us.
     </p>
-  
+    </b-row>
   
     <b-row>
       <b-col cols="12" sm="12">
@@ -48,9 +49,9 @@
               rows="3"
               max-rows="6"
             ></b-form-textarea>
-
-            <b-button type="submit" variant="primary">Submit</b-button>
-
+            <b-button-group>
+              <b-button type="submit" variant="primary">Submit</b-button>
+            </b-button-group>
           </form>
 
       </b-col>
