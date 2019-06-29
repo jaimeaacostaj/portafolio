@@ -1,6 +1,6 @@
 <script type="text/x-template" id="home-template">
 
-  <diV class="container-fluid">
+  <diV>
     <div>
       <b-carousel
       id="carousel-1"
@@ -17,14 +17,12 @@
     >
       <!-- Text slides with image -->
       <b-carousel-slide>
-         <img
-          slot="img"
-          class="d-block img-fluid w-100"
-          width="1024"
-          height="350"
-          src="../images/ceiling.jpg"
-          alt="image slot"
-        >
+          <picture>
+              <source srcset="../images/ceilingx480.jpg" media="(min-width: 576px)">
+              
+              <img srcset="../images/ceiling.jpg" alt="…">
+            </picture>
+   
       <h2 class="text-sm-left">Is There a Hole in Your Drywall?</h2>
       <p class="text-sm-left">Find a Drywall Repair Company in Omaha, SERVICES TODAY</p>
       <b-button variant='primary' v-b-modal.modal-1>Contact Us</b-button>
