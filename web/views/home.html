@@ -1,6 +1,6 @@
 <script type="text/x-template" id="home-template">
 
-  <div class="container">
+  
       <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -9,7 +9,7 @@
       indicators
       background="#ababab"
       img-width="1024"
-      img-height="480"
+      img-height="250"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
@@ -18,10 +18,11 @@
       <b-carousel-slide
         caption="Is There a Hole in Your Drywall?"
         text="Find a Drywall Repair Company in Omaha, NE
-        SCHEDULE DRYWALL OR VINYL FLOORING INSTALLATION SERVICES TODAY"
+        SCHEDULE DRYWALL OR VINYL FLOORING INSTALLATION SERVICES TODAY
+        <b-modal id='modal-1' title='CONTACT US'>"
         img-src="../images/ceiling.jpg"
       >
-      <b-modal id="modal-1" title="CONTACT US">
+      
       </b-carousel-slide>
 
       <b-carousel-slide
@@ -235,7 +236,6 @@
       
         </div>
       
-      </div>
       
 
 
