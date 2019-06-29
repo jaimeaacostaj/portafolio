@@ -17,20 +17,28 @@
     >
       <!-- Text slides with image -->
       <b-carousel-slide>
-      <img 
-  srcset="../images/ceilingx480.jpg 300w"
-  sizes=" (max-width: 600px) 300px"
-  src="../images/ceiling.jpg" />
+         <img
+          slot="img"
+          class="d-block img-fluid w-100"
+          width="1024"
+          height="480"
+          src="../images/ceilingx480.jpg"
+          alt="image slot"
+        >
       <h2 class="text-sm-left">Is There a Hole in Your Drywall?</h2>
       <p class="text-sm-left">Find a Drywall Repair Company in Omaha, SERVICES TODAY</p>
       <b-button variant='primary' v-b-modal.modal-1>Contact Us</b-button>
       </b-carousel-slide>
 
       <b-carousel-slide>
-          <img 
-      srcset="../images/ceilingx480.jpg 300w"
-      sizes=" (max-width: 600px) 300px"
-      src="../images/ceiling.jpg" />
+          <img
+          slot="img"
+          class="d-block img-fluid w-100"
+          width="1024"
+          height="480"
+          src="../images/ceilingx480.jpg"
+          alt="image slot"
+        >
           <h2 class="text-sm-left">Is There a Hole in Your Drywall?</h2>
           <p class="text-sm-left">Find a Drywall Repair Company in Omaha, SERVICES TODAY</p>
           <b-button variant='primary' v-b-modal.modal-1>Contact Us</b-button>
