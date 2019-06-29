@@ -16,26 +16,25 @@
       @sliding-end="onSlideEnd"
     >
       <!-- Text slides with image -->
-      <b-carousel-slide
-     
-        img-src="../images/ceiling.jpg"
-      >
+      <b-carousel-slide>
+      <img 
+  srcset="../images/ceilingx480.jpg 300w"
+  sizes=" (max-width: 600px) 300px"
+  src="../images/ceiling.jpg" />
       <h2 class="text-sm-left">Is There a Hole in Your Drywall?</h2>
       <p class="text-sm-left">Find a Drywall Repair Company in Omaha, SERVICES TODAY</p>
       <b-button variant='primary' v-b-modal.modal-1>Contact Us</b-button>
       </b-carousel-slide>
 
-      <b-carousel-slide
-      
-        img-src="../images/drywall.jpg"
-      >
-
-      <h2 class="text-sm-left">Is There a Hole in Your Drywall?</h2>
-
-      <p class="text-sm-left">Find a Drywall Repair Company in Omaha, SERVICES TODAY</p>
-
-      <b-button variant='primary' v-b-modal.modal-1>Contact Us</b-button>
-      </b-carousel-slide>
+      <b-carousel-slide>
+          <img 
+      srcset="../images/ceilingx480.jpg 300w"
+      sizes=" (max-width: 600px) 300px"
+      src="../images/ceiling.jpg" />
+          <h2 class="text-sm-left">Is There a Hole in Your Drywall?</h2>
+          <p class="text-sm-left">Find a Drywall Repair Company in Omaha, SERVICES TODAY</p>
+          <b-button variant='primary' v-b-modal.modal-1>Contact Us</b-button>
+          </b-carousel-slide>
 
     </b-carousel>
   </div>
