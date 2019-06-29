@@ -7,7 +7,7 @@
       :interval="4000"
       controls
       indicators
-      background="#ababab"
+      background="#ffffff"
       img-width="1024"
       img-height="480"
       style="text-shadow: 1px 1px 2px #333;"
@@ -16,14 +16,16 @@
     >
       <!-- Text slides with image -->
       <b-carousel-slide
-        caption="Is There a Hole in Your Drywall?"
-        text="Find a Drywall Repair Company in Omaha, NE
-        SCHEDULE DRYWALL OR VINYL FLOORING INSTALLATION SERVICES TODAY
+        img-height="250"
+        caption-html="<h3>Is There a Hole in Your Drywall?</h3>"
+        text-html="<p>Find a Drywall Repair Company in Omaha, NE
+        SCHEDULE DRYWALL OR VINYL FLOORING INSTALLATION SERVICES TODAY<p>
+        <b-button variant='primary' v-b-modal.modal-1>Contact Us</b-button>
         "
         img-src="../images/ceiling.jpg"
       >
       
-      <b-button variant="primary" v-b-modal.modal-1>Contact Us</b-button>
+      
       </b-carousel-slide>
 
       <b-carousel-slide
@@ -153,7 +155,7 @@
               :interval="4000"
               controls
               indicators
-              background="#ababab"
+              background="#ffffff"
               img-width="180"
               img-height="170"
               style="text-shadow: 1px 1px 2px #333;"
