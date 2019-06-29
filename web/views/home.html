@@ -9,34 +9,30 @@
       indicators
       background="#ffffff"
       img-width="1024"
-      img-height="480"
+      img-height="250"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
       <!-- Text slides with image -->
       <b-carousel-slide
-        img-height="250"
-        caption-html="<h3>Is There a Hole in Your Drywall?</h3>"
-        text-html="<p>Find a Drywall Repair Company in Omaha, NE
-        SCHEDULE DRYWALL OR VINYL FLOORING INSTALLATION SERVICES TODAY<p>
-        <b-button variant='primary' v-b-modal.modal-1>Contact Us</b-button>
-        "
         img-src="../images/ceiling.jpg"
       >
-      
-      
+      <h2>Is There a Hole in Your Drywall?</h2>
+      <p>Find a Drywall Repair Company in Omaha, NE
+        SCHEDULE DRYWALL OR VINYL FLOORING INSTALLATION SERVICES TODAY</p>
+      <b-button variant='primary' v-b-modal.modal-1>Contact Us</b-button>
       </b-carousel-slide>
 
       <b-carousel-slide
-      caption="Is There a Hole in Your Drywall?"
-      text="Find a Drywall Repair Company in Omaha, NE
-      SCHEDULE DRYWALL OR VINYL FLOORING INSTALLATION SERVICES TODAY
-      "
+  
         img-src="../images/drywall.jpg"
       >
 
-        <b-button variant="primary" v-b-modal.modal-1>Contact Us</b-button>
+      <h2>Is There a Hole in Your Drywall?</h2>
+      <p>Find a Drywall Repair Company in Omaha, NE
+        SCHEDULE DRYWALL OR VINYL FLOORING INSTALLATION SERVICES TODAY</p>
+      <b-button variant='primary' v-b-modal.modal-1>Contact Us</b-button>
       </b-carousel-slide>
 
     </b-carousel>
