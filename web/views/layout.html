@@ -40,7 +40,21 @@ const UserSettings = {
 }
 
 const HOME = {
-	template: "#home-template"
+	template: "#home-template",
+  data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
 }
 
 const DRYWALL = {
