@@ -93,7 +93,23 @@ const ACOUSTIC = {
 }
 
 const REVIEWS = {
-	template: "#reviews-template"
+	template: "#reviews-template",
+  data() {
+      return {
+       
+        slide1: 0,
+        sliding: null
+      }
+    },
+    methods: {
+   
+      onSlideStart1(slide) {
+        this.sliding = true
+      },
+      onSlideEnd1(slide) {
+        this.sliding = false
+      }
+    }
 }
 
 const CONTACT = {
