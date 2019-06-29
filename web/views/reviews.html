@@ -1,5 +1,225 @@
 <script type="text/x-template" id="reviews-template">
 
+
+  <b-container >
+       
+      <b-row>
+        <b-col cols="7" sm="7">
+          <h1>Reviews</h1>
+          <b-card-group columns>
+
+              <b-card header="Project: Install Drywall">
+                  <blockquote class="blockquote mb-0">
+                    <p>Very high quality workmanship and done quickly.</p>
+                    <footer class="blockquote-footer">
+                        Review by Joan K. in Bellevue, NE
+                    </footer>
+                  </blockquote>
+                </b-card>
+
+                <b-card header="Project: Install Drywall">
+                    <blockquote class="blockquote mb-0">
+                      <p>They did a great job framing out a basement bedroom/closet and putting up the drywall. They were quick, very polite and considerate of our space, making sure not to track things through the house. The price was good and we would definitely hire them again.</p>
+                      <footer class="blockquote-footer">
+                          Review by Mindy M. in Papillion, NE
+                      </footer>
+                    </blockquote>
+                  </b-card>
+
+                  <b-card header="Project: Install Drywall">
+                      <blockquote class="blockquote mb-0">
+                        <p>They did a great job putting in a wall in my basement. Cleaned up after the job, very polite, a good price for the work.</p>
+                        <footer class="blockquote-footer">
+                            Review by Danielle P. in Omaha, NE
+                        </footer>
+                      </blockquote>
+                    </b-card>
+
+                    <b-card header="Project: Install Drywall">
+                        <blockquote class="blockquote mb-0">
+                          <p>They did a great job putting in a wall in my basement. Cleaned up after the job, very polite, a good price for the work.</p>
+                          <footer class="blockquote-footer">
+                              Review by Danielle P. in Omaha, NE
+                          </footer>
+                        </blockquote>
+                      </b-card>
+
+                      <b-card header="Project: Install Drywall">
+                          <blockquote class="blockquote mb-0">
+                            <p>They did a great job putting in a wall in my basement. Cleaned up after the job, very polite, a good price for the work.</p>
+                            <footer class="blockquote-footer">
+                                Review by Danielle P. in Omaha, NE
+                            </footer>
+                          </blockquote>
+                        </b-card>
+
+                        <b-card header="Project: Install Drywall">
+                            <blockquote class="blockquote mb-0">
+                              <p>They did a great job putting in a wall in my basement. Cleaned up after the job, very polite, a good price for the work.</p>
+                              <footer class="blockquote-footer">
+                                  Review by Danielle P. in Omaha, NE
+                              </footer>
+                            </blockquote>
+                          </b-card>
+
+
+                          <b-card header="Project: Install Drywall">
+                              <blockquote class="blockquote mb-0">
+                                <p>They did a great job putting in a wall in my basement. Cleaned up after the job, very polite, a good price for the work.</p>
+                                <footer class="blockquote-footer">
+                                    Review by Danielle P. in Omaha, NE
+                                </footer>
+                              </blockquote>
+                            </b-card>
+
+
+                            <b-card header="Project: Install Drywall">
+                                <blockquote class="blockquote mb-0">
+                                  <p>They did a great job putting in a wall in my basement. Cleaned up after the job, very polite, a good price for the work.</p>
+                                  <footer class="blockquote-footer">
+                                      Review by Danielle P. in Omaha, NE
+                                  </footer>
+                                </blockquote>
+                              </b-card>
+
+
+                              <b-card header="Project: Install Drywall">
+                                  <blockquote class="blockquote mb-0">
+                                    <p>They did a great job putting in a wall in my basement. Cleaned up after the job, very polite, a good price for the work.</p>
+                                    <footer class="blockquote-footer">
+                                        Review by Danielle P. in Omaha, NE
+                                    </footer>
+                                  </blockquote>
+                                </b-card>
+
+
+                                <b-card header="Project: Install Drywall">
+                                    <blockquote class="blockquote mb-0">
+                                      <p>They did a great job putting in a wall in my basement. Cleaned up after the job, very polite, a good price for the work.</p>
+                                      <footer class="blockquote-footer">
+                                          Review by Danielle P. in Omaha, NE
+                                      </footer>
+                                    </blockquote>
+                                  </b-card>
+
+
+
+
+
+
+            </b-card-group>
+
+
+          
+
+
+        </b-col>
+
+        <b-col cols="5" sm="5">
+
+          <div class="d-flex justify-content-center">
+            <b-carousel
+            id="carousel-1"
+            v-model="slide1"
+            :interval="4000"
+            controls
+            indicators
+            background="#ffffff"
+            img-width="150"
+            img-height="150"
+            style="text-shadow: 1px 1px 2px #333;"
+            @sliding-start="onSlideStart1"
+            @sliding-end="onSlideEnd1"
+          >
+            
+         
+      
+            <b-carousel-slide>
+      
+            <img
+            slot="img"
+            width="150px"
+            height="150px"
+            src="https://www.homeadvisor.com/images/sp-badges/elite.png"
+            alt="elite"
+          >
+
+            </b-carousel-slide>
+
+            <b-carousel-slide>
+    
+          <img
+          slot="img"
+          width="150px"
+          height="150px"
+          src="https://www.homeadvisor.com/images/sp-badges/soap.png"
+          alt="soap"
+        >
+          </b-carousel-slide>
+          <b-carousel-slide
+          
+          
+        >
+
+        <img
+          slot="img"
+          width="150px"
+          height="150px"
+          src="https://www.homeadvisor.com/images/sp-badges/3year.png"
+          alt="soap"
+        >
+  
+        </b-carousel-slide>
+        <b-carousel-slide
+          
+
+      >
+
+      <img
+      slot="img"
+      width="150px"
+      height="150px"
+      src="https://www.homeadvisor.com/images/sp-badges/boha-2019.png"
+      alt="boha"
+    >
+
+      </b-carousel-slide>
+      <b-carousel-slide
+          
+
+    >
+
+    <img
+    slot="img"
+    width="150px"
+    height="150px"
+    src="https://www.homeadvisor.com/images/sp-badges/100reviews.png"
+    alt="reviews"
+  >
+
+    
+      
+    </b-carousel-slide>
+      
+          </b-carousel>
+        </div>
+      
+<br>
+            <div class="d-flex justify-content-center">
+                <b-link href="https://www.homeadvisor.com/rated.TFConstruction.36331278.html"><b-img src="../images/omaha.png" fluid alt="Responsive image"></b-img></b-link>
+            </div><br>
+           
+            <div class="d-flex justify-content-center">
+              <b-link href="https://www.homeadvisor.com/rated.TFConstruction.36331278.html"><b-img src="https://www.homeadvisor.com/images/sp-badges/3year.png" fluid alt="Responsive image"></b-img></b-link>
+            </div>
+        </b-col>
+        
+      </b-row>
+
+    </b-container>
+    <br><br><br>
+
+
   <div class="container">
     <div class="alert alert-info text-center" role="alert">
             Felipe was courteous, quick to respond, and did a great job repairing our plaster ceiling!
