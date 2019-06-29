@@ -34,3 +34,16 @@
 .jumbotron .lang-logo img {
   max-width: 100%;
 }
+
+
+@media (min-width: 576px) {
+  .ceiling {
+    background-image: url(../images/ceilingx480.jpg);
+  }
+  .drywall {
+    background-image: url(../images/drywallx480.jpg);
+  }
+}
+
+
+
