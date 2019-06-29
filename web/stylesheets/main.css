@@ -38,10 +38,10 @@
 
 @media (min-width: 576px) {
   .ceiling {
-    background-image: url(../images/ceilingx480.jpg);
+    background-image: url(../images/ceiling.jpg);
   }
   .drywall {
-    background-image: url(../images/drywallx480.jpg);
+    background-image: url(../images/drywall.jpg);
   }
 }
 
