@@ -101,7 +101,19 @@ router.push('/')
 
 window.app = new Vue({
 	router,
-  el: '#app'
+  el: '#app',
+  data: {
+    slide: 0,
+    sliding: null
+  },
+  methods: {
+    onSlideStart: function(slide) {
+      this.sliding = true
+    },
+    onSlideEnd: function(slide) {
+      this.sliding = false
+    }
+  }
 })
 
     </script>
