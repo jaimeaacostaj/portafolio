@@ -44,6 +44,7 @@ const HOME = {
   data() {
       return {
         slide: 0,
+        slide1: 0,
         sliding: null
       }
     },
@@ -52,6 +53,12 @@ const HOME = {
         this.sliding = true
       },
       onSlideEnd(slide) {
+        this.sliding = false
+      },
+      onSlideStart1(slide) {
+        this.sliding = true
+      },
+      onSlideEnd1(slide) {
         this.sliding = false
       }
     }

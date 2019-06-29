@@ -149,7 +149,7 @@
 
               <b-carousel
               id="carousel-1"
-              v-model="slide"
+              v-model="slide1"
               :interval="4000"
               controls
               indicators
@@ -157,17 +157,11 @@
               img-width="180"
               img-height="170"
               style="text-shadow: 1px 1px 2px #333;"
-              @sliding-start="onSlideStart"
-              @sliding-end="onSlideEnd"
+              @sliding-start="onSlideStart1"
+              @sliding-end="onSlideEnd1"
             >
               
-              <b-carousel-slide
-              
-                img-src="https://www.homeadvisor.com/images/sp-badges/toprated.png"
-              >
-              
-              
-              </b-carousel-slide>
+           
         
               <b-carousel-slide
             
