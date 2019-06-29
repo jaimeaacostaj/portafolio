@@ -73,7 +73,23 @@ const LAMINATE = {
 }
 
 const ACOUSTIC = {
-	template: "#acoustic-template"
+	template: "#acoustic-template",
+  data() {
+      return {
+       
+        slide1: 0,
+        sliding: null
+      }
+    },
+    methods: {
+   
+      onSlideStart1(slide) {
+        this.sliding = true
+      },
+      onSlideEnd1(slide) {
+        this.sliding = false
+      }
+    }
 }
 
 const REVIEWS = {
