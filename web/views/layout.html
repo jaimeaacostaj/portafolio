@@ -8,19 +8,14 @@
   <div id="app">
   {% include 'nav.html' %}
   {% include 'home.html' %}
-  {% include 'drywall.html' %}
-  {% include 'laminate.html' %}
-  {% include 'acoustic.html' %}
-  {% include 'reviews.html' %}
-  {% include 'contact.html' %}
+  {% include 'proyectos.html' %}
+  {% include 'perfil.html' %}
+  {% include 'contacto.html' %}
 
   {% include 'content.html' %}
 
- 
-  
   {% include 'footer.html' %}
   
-
   </div>
 
   <script>
@@ -64,56 +59,17 @@ const HOME = {
     }
 }
 
-const DRYWALL = {
-	template: "#drywall-template"
+const PROYECTOS = {
+	template: "#proyectos-template"
 }
 
-const LAMINATE = {
-	template: "#laminate-template"
+const PERFIL = {
+	template: "#perfil-template"
 }
 
-const ACOUSTIC = {
-	template: "#acoustic-template",
-  data() {
-      return {
-       
-        slide1: 0,
-        sliding: null
-      }
-    },
-    methods: {
-   
-      onSlideStart1(slide) {
-        this.sliding = true
-      },
-      onSlideEnd1(slide) {
-        this.sliding = false
-      }
-    }
-}
 
-const REVIEWS = {
-	template: "#reviews-template",
-  data() {
-      return {
-       
-        slide1: 0,
-        sliding: null
-      }
-    },
-    methods: {
-   
-      onSlideStart1(slide) {
-        this.sliding = true
-      },
-      onSlideEnd1(slide) {
-        this.sliding = false
-      }
-    }
-}
-
-const CONTACT = {
-	template: "#contact-template"
+const CONTACTO = {
+	template: "#contacto-template"
 }
 
 const router = new VueRouter({
@@ -127,24 +83,16 @@ const router = new VueRouter({
         component: HOME
       }, 
       {
-      	path: 'drywall',
-        component: DRYWALL
+      	path: 'proyectos',
+        component: PROYECTOS
       }, 
       {
-      	path: 'laminate',
-        component: LAMINATE
-      }, 
+      	path: 'perfil',
+        component: PERFIL
+      },  
       {
-      	path: 'acoustic',
-        component: ACOUSTIC
-      }, 
-      {
-      	path: 'reviews',
-        component: REVIEWS
-      }, 
-      {
-      	path: 'contact',
-        component: CONTACT
+      	path: 'contacto',
+        component: CONTACTO
       } ]
     }
   ]
