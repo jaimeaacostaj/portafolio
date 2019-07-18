@@ -35,28 +35,7 @@ const UserSettings = {
 }
 
 const HOME = {
-	template: "#home-template",
-  data() {
-      return {
-        slide: 0,
-        slide1: 0,
-        sliding: null
-      }
-    },
-    methods: {
-      onSlideStart(slide) {
-        this.sliding = true
-      },
-      onSlideEnd(slide) {
-        this.sliding = false
-      },
-      onSlideStart1(slide) {
-        this.sliding = true
-      },
-      onSlideEnd1(slide) {
-        this.sliding = false
-      }
-    }
+	template: "#home-template"
 }
 
 const PROYECTOS = {
@@ -108,12 +87,7 @@ window.app = new Vue({
     sliding: null
   },
   methods: {
-    onSlideStart: function(slide) {
-      this.sliding = true
-    },
-    onSlideEnd: function(slide) {
-      this.sliding = false
-    }
+   
   }
 })
 
