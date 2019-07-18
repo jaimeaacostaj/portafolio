@@ -9,7 +9,19 @@
 
   {% include 'footer.html' %}
 
-  {% include 'portafolio/src/main.js' %}
+  <script>
+  
+  import App from '/portafolio/src/App.vue'
+import router from '/portafolio/src/router.js'
+import store from '/portafolio/src/store.js'
+
+
+new Vue({
+  router,
+  store,
+  render: h => h(App)
+}).$mount('#app');
+  </script>
   
 </body>
 
