@@ -1,5 +1,4 @@
-import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.esm.browser.js'
-import Router from 'https://unpkg.com/vue-router/dist/vue-router.js'
+
 import Home from './views/Home.vue'
 
 Vue.use(Router)
