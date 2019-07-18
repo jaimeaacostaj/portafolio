@@ -5,93 +5,11 @@
 </head>
 
 <body>
-  <div id="app">
-  {% include 'nav.html' %}
-  {% include 'home.html' %}
-  {% include 'proyectos.html' %}
-  {% include 'perfil.html' %}
-  {% include 'contacto.html' %}
-
-  {% include 'content.html' %}
+  <div id="app"></div>
 
   {% include 'footer.html' %}
-  
-  </div>
 
-  <script>
-    const UserSettingsNav = {
-	    template: "#nav-template"
-    }
-const UserSettings = {
-	template: `
-<div class="">
-  
-  <UserSettingsNav/>
-  <router-view class =""/>
-  <router-view name="helper" class=""/>
-</div>
-  `,
-  components: { UserSettingsNav }
-}
-
-const HOME = {
-	template: "#home-template"
-}
-
-const PROYECTOS = {
-	template: "#proyectos-template"
-}
-
-const PERFIL = {
-	template: "#perfil-template"
-}
-
-
-const CONTACTO = {
-	template: "#contacto-template"
-}
-
-const router = new VueRouter({
-  mode: 'history',
-  routes: [
-    { path: '/',
-      // You could also have named views at tho top
-      component: UserSettings,
-      children: [{
-      	path: '',
-        component: HOME
-      }, 
-      {
-      	path: 'proyectos',
-        component: PROYECTOS
-      }, 
-      {
-      	path: 'perfil',
-        component: PERFIL
-      },  
-      {
-      	path: 'contacto',
-        component: CONTACTO
-      } ]
-    }
-  ]
-})
-
-router.push('/')
-
-window.app = new Vue({
-	router,
-  el: '#app',
-  data: {
-    slide: 0,
-    sliding: null
-  },
-  methods: {
-   
-  }
-})
-
-    </script>
+  <script type="text/javascript" src="/portafolio/src/main.js"></script>
   
 </body>
 </html>
