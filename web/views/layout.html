@@ -10,18 +10,25 @@
   {% include 'footer.html' %}
 
 
+
+  <script type="module">
+      import * as module from './home.html'
+      
+      console.log(module.default()) // Prints: Hi from the default export!
+      </script>
+
   <script>
   
-  import App from './home.html';
+  import {App} from './home.html';
   //import {router} from '/views/portafolio/src/router.js';
   //import {store} from '/views/portafolio/src/store.js';
 
 
-new Vue({
+/*new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#app');
+}).$mount('#app');*/
   </script>
   
 </body>
