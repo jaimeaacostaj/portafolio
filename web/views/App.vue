@@ -1,4 +1,4 @@
-<script type="module">
+
 <template>
   <div id="app">
     <div id="nav">
@@ -31,4 +31,3 @@
 }
 </style>
 
- </script>
