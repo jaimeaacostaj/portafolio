@@ -1,7 +1,4 @@
 
-import Home from './views/Home.vue'
-
-
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -9,7 +6,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: () => import(/* webpackChunkName: "about" */ './views/Home.vue')
     },
     {
       path: '/about',
