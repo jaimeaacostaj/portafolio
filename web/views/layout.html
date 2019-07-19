@@ -5,7 +5,17 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  
+
+      <div id="app">
+          <div id="nav">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/about">About</router-link>
+          </div>
+          <router-view/>
+        </div>
+
+
 
   {% include 'footer.html' %}
 
@@ -14,16 +24,16 @@
   <script type="module">
    
   
-  import {App} from '/views/App.vue'
+  
   import {router} from '/views/portafolio/src/router.js';
   import {store} from '/views/portafolio/src/store.js';
 
 
 new Vue({
+  el: '#editor',
   router,
-  store,
-  render: h => h(App)
-}).$mount('#app');
+  store
+});
   </script>
   
 </body>
