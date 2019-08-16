@@ -4,6 +4,6 @@ Proyecto desarrollado con el fin de mostrar mis habilidades en el área de desar
 
 # Implementación
 
-Este proyecto se implemento con la libreía **BootstrapVue**. La cual esta implementada con **Boostrap v4** y **Vue.js**
+Este proyecto se implemento con la librería **BootstrapVue**. La cual esta implementada con **Boostrap v4** y **Vue.js**
 
 
