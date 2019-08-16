@@ -5,6 +5,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   <div id="app">
   {% include 'nav.html' %}
   {% include 'home.html' %}
@@ -13,6 +14,19 @@
   {% include 'contacto.html' %}
 
   {% include 'content.html' %}
+=======
+  
+
+      <div id="app">
+          <div id="nav">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/about">About</router-link>
+          </div>
+          <router-view/>
+        </div>
+
+
+>>>>>>> 206d8b7016b78c36318845979fa2717d77b7b1fc
 
   {% include 'footer.html' %}
   
@@ -42,11 +56,50 @@ const PROYECTOS = {
 	template: "#proyectos-template"
 }
 
+<<<<<<< HEAD
 const PERFIL = {
 	template: "#perfil-template"
 }
+=======
+  <script type="module">
+   
+  
+  
 
+  let router = new VueRouter({
+  mode: 'history',
+  
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: () => import(/* webpackChunkName: "about" */ './views/portafolio/views/Home.vue')
+    },
+    {
+      path: '/about',
+      name: 'about',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './views/portafolio/views/About.vue')
+    }
+  ]
+});
 
+  let store = new Vuex.Store({
+  state: {
+
+  },
+  mutations: {
+
+  },
+  actions: {
+>>>>>>> 206d8b7016b78c36318845979fa2717d77b7b1fc
+
+  }
+});
+
+<<<<<<< HEAD
 const CONTACTO = {
 	template: "#contacto-template"
 }
@@ -92,6 +145,14 @@ window.app = new Vue({
 })
 
     </script>
+=======
+new Vue({
+  el: '#app',
+  router,
+  store
+});
+  </script>
+>>>>>>> 206d8b7016b78c36318845979fa2717d77b7b1fc
   
 </body>
 </html>

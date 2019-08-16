@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 
 Vue.use(Router)
+=======
+>>>>>>> 206d8b7016b78c36318845979fa2717d77b7b1fc
 
 export default new Router({
   mode: 'history',
@@ -11,7 +14,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: () => import(/* webpackChunkName: "about" */ './views/Home.vue')
     },
     {
       path: '/about',
