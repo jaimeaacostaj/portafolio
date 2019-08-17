@@ -60,15 +60,10 @@ const CONTACTO = {
 
 const DESCRIPTION = {
   name: 'Description',
-  props: ['tab'],
-  data(){
-    return { 
-      numeroTab:1
-    }
-  },
-  mounted(){
-    if(this.tab){
-      this.numeroTab = this.tab
+  props: {
+    name: {
+      type: String,
+      default: 'Vue!'
     }
   },
 	template: "#description-template"
@@ -94,7 +89,7 @@ const router = new VueRouter({
         component: PERFIL
       },  
       {
-      	path: '/description',
+      	path: 'description/:name',
         name: 'Description',
         component: DESCRIPTION,
         props: true
