@@ -61,7 +61,7 @@ const CONTACTO = {
 const DESCRIPTION = {
   name: 'Description',
   props: {
-    name: {
+    name1: {
       type: String,
       default: 'Vue!'
     }
@@ -94,7 +94,6 @@ const router = new VueRouter({
       },  
       {
       	path: 'description/:name',
-        name: 'Description',
         component: DESCRIPTION,
         props: true
        
