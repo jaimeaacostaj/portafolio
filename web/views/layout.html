@@ -55,7 +55,12 @@ const CONTACTO = {
 
 const DESCRIPTION = {
 	template: "#description-template",
-  props: ['tab']
+  props: 'tab',
+  data: function() {
+    return {
+        tab: tab,
+        }
+  }
 }
 
 const router = new VueRouter({
