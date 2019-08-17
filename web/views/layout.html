@@ -11,6 +11,7 @@
   {% include 'proyectos.html' %}
   {% include 'perfil.html' %}
   {% include 'contacto.html' %}
+  {% include 'description.html' %}
 
   {% include 'content.html' %}
 
@@ -48,10 +49,12 @@ const PERFIL = {
 	template: "#perfil-template"
 }
 
-
-
 const CONTACTO = {
 	template: "#contacto-template"
+}
+
+const DESCRIPTION = {
+	template: "#description-template"
 }
 
 const router = new VueRouter({
@@ -71,6 +74,10 @@ const router = new VueRouter({
       {
       	path: 'perfil',
         component: PERFIL
+      },  
+      {
+      	path: 'description',
+        component: DESCRIPTION
       },  
       {
       	path: 'contacto',
