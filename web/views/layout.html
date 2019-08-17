@@ -42,7 +42,12 @@ const HOME = {
 }
 
 const PROYECTOS = {
-	template: "#proyectos-template"
+	template: "#proyectos-template",
+  data(){
+    return { 
+      app:2
+    }
+  }
 }
 
 const PERFIL = {
@@ -54,6 +59,18 @@ const CONTACTO = {
 }
 
 const DESCRIPTION = {
+  name: 'Description',
+  props: ['tab'],
+  data(){
+    return { 
+      numeroTab:1
+    }
+  },
+  mounted(){
+    if(this.tab){
+      this.numeroTab = this.tab
+    }
+  },
 	template: "#description-template"
  
 }
@@ -77,8 +94,10 @@ const router = new VueRouter({
         component: PERFIL
       },  
       {
-      	path: 'description',
-        component: DESCRIPTION
+      	path: '/description',
+        name: 'Description',
+        component: DESCRIPTION,
+        props: true
        
       },  
       {
