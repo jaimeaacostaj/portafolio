@@ -58,15 +58,20 @@ const CONTACTO = {
 	template: "#contacto-template"
 }
 
+
+var data = { counter: 0 }
+
 const DESCRIPTION = {
-  name: 'Description',
+  template: '<button v-on:click="counter += 1">{{ counter }}</button>',
+  // 'data' es técnicamente una función, por lo que Vue no
+  // se quejará, pero estamos devolviendo la misma referencia
+  // de objeto en cada instancia de componente
   data: function () {
-    return {
-      name: "hola"
-    }
-  },
+    return data
+  }
+
  
-	template: "#description-template"
+//	template: "#description-template"
  
 }
 
