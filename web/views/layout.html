@@ -54,7 +54,9 @@ const CONTACTO = {
 }
 
 const DESCRIPTION = {
-  props: ['tab'],
+  props: {
+      tab: String
+    },
 	template: "#description-template"
  
 }
@@ -78,8 +80,9 @@ const router = new VueRouter({
         component: PERFIL
       },  
       {
-      	path: 'description/:tab',
-        component: DESCRIPTION
+      	path: 'description',
+        component: DESCRIPTION,
+        props:true
       },  
       {
       	path: 'contacto',
