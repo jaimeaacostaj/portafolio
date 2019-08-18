@@ -62,17 +62,17 @@ const CONTACTO = {
 var data = { counter: 0 }
 
 const DESCRIPTION = {
-  template: '<button :id="counter" v-on:click="counter += 1"></button>',
-  // 'data' es técnicamente una función, por lo que Vue no
-  // se quejará, pero estamos devolviendo la misma referencia
-  // de objeto en cada instancia de componente
-  data: function () {
-    return counter= 0 
+  props: ['tab'],
+  template: "#description-template",
+  data() {
+      return {
+        tabIndex: 0
+      }
+  },
+  mounted(){
+    console.log("tab:"+this.tab);
+    this.tabIndex = this.tab;
   }
-
- 
-//	template: "#description-template"
- 
 }
 
 const router = new VueRouter({
@@ -94,8 +94,9 @@ const router = new VueRouter({
         component: PERFIL
       },  
       {
-      	path: 'description',
-        component: DESCRIPTION
+      	path: 'description/:tab',
+        component: DESCRIPTION,
+        props: true
        
       },  
       {

@@ -2,7 +2,13 @@
     
     <div>
         
-        <button>Perfil  </button>
+        <b-card no-body>
+            <b-tabs v-model="tabIndex" card>
+                <b-tab title="Tab 1" :title-link-class="linkClass(0)">Tab Contents 1</b-tab>
+                <b-tab title="Tab 2" :title-link-class="linkClass(1)">Tab Contents 2</b-tab>
+                <b-tab title="Tab 3" :title-link-class="linkClass(2)">Tab Contents 3</b-tab>
+            </b-tabs>
+        </b-card>
        
     </div>
   
