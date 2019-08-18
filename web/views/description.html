@@ -4,24 +4,36 @@
         
         <b-card no-body>
             <b-tabs v-model="tabIndex" pills card>
-                <b-tab class="m-2">
-                    <template slot="title">
-                        <i class="ni ni-mobile-button"></i> App Attendo Expedientes
-                    </template>
-                    App Attendo Expedientes
-                </b-tab>
-                <b-tab class="m-2">
-                    <template slot="title">
-                        <i class="ni ni-mobile-button"></i> App Calixe
-                    </template>
-                    App Calixe
-                </b-tab>
-                <b-tab class="m-2">
-                    <template slot="title">
-                        <i class="ni ni-mobile-button"></i> App Cobranza Autofin
-                    </template>
-                    App Cobranza Autofin
-                </b-tab>
+                <b-dropdown id="dropdown-left" text="Left align" variant="primary" class="m-2">
+                    <b-dropdown-item>
+                        <b-tab class="m-2">
+                            <template slot="title">
+                                <i class="ni ni-mobile-button"></i> App Attendo Expedientes
+                            </template>
+                            App Attendo Expedientes
+                        </b-tab>
+                    </b-dropdown-item>
+                    <b-dropdown-item>
+                            <b-tab class="m-2">
+                                    <template slot="title">
+                                        <i class="ni ni-mobile-button"></i> App Calixe
+                                    </template>
+                                    App Calixe
+                                </b-tab>
+                    
+                    </b-dropdown-item>
+                    <b-dropdown-item href="#">
+                            <b-tab class="m-2">
+                                    <template slot="title">
+                                        <i class="ni ni-mobile-button"></i> App Cobranza Autofin
+                                    </template>
+                                    App Cobranza Autofin
+                                </b-tab>
+                    </b-dropdown-item>
+                </b-dropdown>
+               
+               
+              
                 <b-tab class="m-2" >
                     <template slot="title">
                         <i class="ni ni-laptop"></i> Alta de Expedientes Attendo
