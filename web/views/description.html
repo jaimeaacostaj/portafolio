@@ -42,48 +42,93 @@
 
         <b-row class="m-4"> 
                 <b-col>
-                  <b-img thumbnail fluid src="/images/attendo1.png" width="400" alt="Image 1"></b-img>
+                  <b-img thumbnail fluid src="/images/attendo1.png" width="600" alt="Image 1"></b-img>
                 </b-col>
                 <b-col>
-                  <b-img thumbnail fluid src="/images/attendo2.png" width="400" alt="Image 2"></b-img>
+                  <b-img thumbnail fluid src="/images/attendo2.png" width="600" alt="Image 2"></b-img>
                 </b-col>
-                <b-col>
-                  <b-img thumbnail fluid src="/images/attendo3.png" width="400" alt="Image 3"></b-img>
-                </b-col>
-                <b-col>
-                    <b-img thumbnail fluid src="/images/attendo4.png" width="400" alt="Image 1"></b-img>
-                </b-col>
-              </b-row>
+               
+        </b-row>
 
-              <b-row class="m-4"> 
+        <b-row class="m-4"> 
+                <b-col>
+                  <b-img thumbnail fluid src="/images/attendo3.png" width="600" alt="Image 3"></b-img>
+                </b-col>
+                <b-col>
+                    <b-img thumbnail fluid src="/images/attendo4.png" width="600" alt="Image 1"></b-img>
+                </b-col>
+        </b-row>
 
-              <b-carousel
-      id="carousel-1"
-      v-model="slide"
-      :interval="4000"
-      controls
-      indicators
-      background="#ababab"
-      img-width="900"
-      img-height="480"
-      style="text-shadow: 1px 1px 2px #333;"
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
-    >
+        <b-carousel
+                  id="carousel-1"
+                  v-model="slide1"
+                  :interval="4000"
+                  controls
+                  indicators
+                  background="#ffffff"
+                  img-width="150"
+                  img-height="150"
+                  style="text-shadow: 1px 1px 2px #333;"
+                  @sliding-start="onSlideStart"
+                  @sliding-end="onSlideEnd"
+                >
+                  
+                  <b-carousel-slide>
+            
+                  <img
+                  slot="img"
+                  width="100%"
+                  height="400px"
+                  src="/images/alta1.png"
+                  alt="alta1"
+                >
     
-
-     
-      <b-carousel-slide img-src="/images/alta1.png"></b-carousel-slide>
-      <b-carousel-slide img-src="/images/alta2.png"></b-carousel-slide>
-      <b-carousel-slide img-src="/images/alta3.png"></b-carousel-slide>
-      <b-carousel-slide img-src="/images/alta4.png"></b-carousel-slide>
-
-
-     
-    </b-carousel>
-
+                  </b-carousel-slide>
+    
+                  <b-carousel-slide>
+          
+                <img
+                slot="img"
+                width="100%"
+                height="400px"
+                src="/images/alta2.png"
+                alt="alta2"
+              >
+                </b-carousel-slide>
+                <b-carousel-slide
+                
+                
+              >
+    
+              <img
+                slot="img"
+                width="100%"
+                height="400px"
+                src="/images/alta3.png"
+                  alt="alta3"
+              >
         
-                      </b-row>
+              </b-carousel-slide>
+              <b-carousel-slide
+                
+    
+            >
+    
+            <img
+            slot="img"
+            width="100%"
+            height="400px"
+            src="/images/alta4.png"
+            alt="alta4"
+          >
+      
+            </b-carousel-slide>
+        
+
+          
+          
+                </b-carousel>
+
 
 
         </div>
