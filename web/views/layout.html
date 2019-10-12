@@ -66,13 +66,19 @@ const DESCRIPTION = {
   template: "#description-template",
   data() {
       return {
-        tabIndex: 0
+        slide: 0,
+        sliding: null
       }
-  },
-  mounted(){
-   
-    this.tabIndex = this.tab;
-  }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+  
 }
 
 const router = new VueRouter({
