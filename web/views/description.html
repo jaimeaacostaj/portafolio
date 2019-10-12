@@ -55,7 +55,34 @@
                 </b-col>
               </b-row>
 
+              <b-carousel
+      id="carousel-1"
+      v-model="slide"
+      :interval="4000"
+      controls
+      indicators
+      background="#ababab"
+      img-width="1024"
+      img-height="480"
+      style="text-shadow: 1px 1px 2px #333;"
+      @sliding-start="onSlideStart"
+      @sliding-end="onSlideEnd"
+    >
+    
+
+     
+      <b-carousel-slide img-src="/images/alta1.png"></b-carousel-slide>
+      <b-carousel-slide img-src="/images/alta2.png"></b-carousel-slide>
+      <b-carousel-slide img-src="/images/alta3.png"></b-carousel-slide>
+      <b-carousel-slide img-src="/images/alta4.png"></b-carousel-slide>
+
+
+     
+    </b-carousel>
+
               <b-row>
+
+
                    
                     <b-col>
                       <b-img thumbnail fluid src="/images/alta1.png" width="900" alt="Image 2"></b-img>
