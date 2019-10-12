@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteCond %{THE_REQUEST} ^.*/index\.php 
-RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+RewriteRule ^(.*)index.php$ /$1 [R=404,L]
 </IfModule>
