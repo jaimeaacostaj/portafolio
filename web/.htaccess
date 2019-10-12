@@ -1,5 +1,4 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteCond %{THE_REQUEST} ^.*/index\.php 
-RewriteRule ^(.*)index.php$ /$1 [R=404,L]
+Redirect 301 / http://www.jaime-acosta.com/
 </IfModule>
