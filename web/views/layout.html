@@ -11,7 +11,16 @@
   {% include 'proyectos.html' %}
   {% include 'perfil.html' %}
   {% include 'contacto.html' %}
-  {% include 'description.html' %}
+  {% include 'expedientes.html' %}
+  {% include 'calixe.html' %}
+  {% include 'cobranza.html' %}
+  {% include 'alta.html' %}
+  {% include 'calixe2.html' %}
+  {% include 'ventas.html' %}
+  {% include 'danos.html' %}
+  {% include 'tablero.html' %}
+  {% include 'correo.html' %}
+  
 
   {% include 'content.html' %}
 
@@ -61,9 +70,156 @@ const CONTACTO = {
 
 var data = { counter: 0 }
 
-const DESCRIPTION = {
-  props: ['tab'],
-  template: "#description-template",
+
+const EXPEDIENTES = {
+  template: "#expedientes-template",
+  data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+  
+}
+
+const CALIXE = {
+  template: "#calixe-template",
+  data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+  
+}
+
+const COBRANZA = {
+  template: "#cobranza-template",
+  data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+}
+
+const ALTA = {
+  template: "#alta-template",
+  data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+  
+}
+
+const CALIXE2 = {
+  template: "#calixe2-template",
+  data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+}
+
+const VENTAS = {
+  template: "#ventas-template",
+  data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+}
+
+const DANOS = {
+  template: "#danos-template",
+  data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+}
+
+const TABLERO = {
+  template: "#tablero-template",
+  data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    }
+}
+
+const CORREO = {
+  template: "#correo-template",
   data() {
       return {
         slide: 0,
@@ -99,15 +255,42 @@ const router = new VueRouter({
       	path: 'perfil',
         component: PERFIL
       },  
+     
       {
-      	path: 'description/:tab',
-        component: DESCRIPTION,
-        props: true
-       
-      },  
+      	path: 'expedientes',
+        component: EXPEDIENTES
+      },
       {
-      	path: 'contacto',
-        component: CONTACTO
+      	path: 'calixe',
+        component: CALIXE
+      },
+      {
+      	path: 'cobranza',
+        component: COBRANZA
+      },
+      {
+      	path: 'alta',
+        component: ALTA
+      },
+      {
+      	path: 'calixe2',
+        component: CALIXE2
+      },
+      {
+      	path: 'cobranza',
+        component: COBRANZA
+      }, 
+      {
+      	path: 'danos',
+        component: DANOS
+      },
+      {
+      	path: 'tablero',
+        component: TABLERO
+      },
+      {
+      	path: 'correo',
+        component: CORREO
       } ]
     }
   ]

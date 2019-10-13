@@ -1,0 +1,135 @@
+<script type="text/x-template" id="ventas-template">
+    
+    <div>
+        <section class="m-4"> 
+
+        <div class="container">
+               
+
+                <b-row >
+            <h2>App Expedientes</h2>
+            <p>
+                Aplicación desarrollada con el fin que los Usuarios puedan dar de alta Expedientes 
+                mediante un celular o tablet Android cuando no tengan acceso a internet, al igual 
+                también puede modificar Expedientes.  
+            </p>
+            <p>
+                Los Expedientes constan de datos llenados por el Usuario los cuales son proporcionados
+                por los futuros clientes con el fin de obtener un crédito.  
+            </p>
+            <p>
+                Se desarrollo la aplicación con el fin de agilizar el proceso de otorgar el crédito 
+                lo más rápido posible al cliente. 
+            </p>
+            <P>
+            La aplicación tiene la funcionalidad de adjuntar las copias de los documentos proporcionados 
+            por el cliente y subirlos al Sistema. Se implemento esto con la <b>API-DROPBOX</b>, ya que los documentos
+            son almacenados en Dropbox.
+            </p>
+            <p>
+                Estás mismas funcionalidades se realizaron en el sitio web del cliente implamentadas con la tecnologías 
+                <b>PHP en el Back End</b> y <b>Vue Js en el Front End</b>.
+            </p>
+            <p>
+                La App fue desarrollada con el lenguaje de programación JAVA. Funciona OFFlINE.
+            </p>
+            <P>
+                A continuación se agregan un conjunto de imágenes de dicha applicación:
+            </P>
+
+       
+        </b-row>
+
+        <b-row class="m-4"> 
+                <b-col>
+                  <b-img thumbnail fluid src="/images/attendo1.png" width="600" alt="Image 1"></b-img>
+                </b-col>
+                <b-col>
+                  <b-img thumbnail fluid src="/images/attendo2.png" width="600" alt="Image 2"></b-img>
+                </b-col>
+               
+        </b-row>
+
+        <b-row class="m-4"> 
+                <b-col>
+                  <b-img thumbnail fluid src="/images/attendo3.png" width="600" alt="Image 3"></b-img>
+                </b-col>
+                <b-col>
+                    <b-img thumbnail fluid src="/images/attendo4.png" width="600" alt="Image 1"></b-img>
+                </b-col>
+        </b-row>
+
+        <b-carousel
+                  id="carousel-1"
+                  v-model="slide"
+                  :interval="4000"
+                  controls
+                  indicators
+                  background="#ffffff"
+                  img-width="900"
+                  img-height="900"
+                  style="text-shadow: 1px 1px 2px #333;"
+                  @sliding-start="onSlideStart"
+                  @sliding-end="onSlideEnd"
+                >
+                  
+                  <b-carousel-slide>
+            
+                  <img
+                  slot="img"
+                  width="100%"
+                  height="900px"
+                  src="/images/alta1.png"
+                  alt="alta1"
+                >
+    
+                  </b-carousel-slide>
+    
+                  <b-carousel-slide>
+          
+                <img
+                slot="img"
+                width="100%"
+                height="900px"
+                src="/images/alta2.png"
+                alt="alta2"
+              >
+                </b-carousel-slide>
+                <b-carousel-slide>
+    
+              <img
+                slot="img"
+                width="100%"
+                height="900px"
+                src="/images/alta3.png"
+                  alt="alta3"
+              >
+        
+              </b-carousel-slide>
+              <b-carousel-slide>
+    
+            <img
+            slot="img"
+            width="100%"
+            height="900px"
+            src="/images/alta5.png"
+            alt="alta4"
+          >
+      
+            </b-carousel-slide>
+        
+
+          
+          
+                </b-carousel>
+
+
+
+        </div>
+
+      
+    </section>
+       
+    </div>
+  
+  </script>
