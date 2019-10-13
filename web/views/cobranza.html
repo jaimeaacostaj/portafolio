@@ -1,135 +1,164 @@
 <script type="text/x-template" id="cobranza-template">
-    
+
     <div>
         <section class="m-4"> 
 
-        <div class="container">
-               
-
-                <b-row >
-            <h2>App Expedientes</h2>
-            <p>
-                Aplicación desarrollada con el fin que los Usuarios puedan dar de alta Expedientes 
-                mediante un celular o tablet Android cuando no tengan acceso a internet, al igual 
-                también puede modificar Expedientes.  
-            </p>
-            <p>
-                Los Expedientes constan de datos llenados por el Usuario los cuales son proporcionados
-                por los futuros clientes con el fin de obtener un crédito.  
-            </p>
-            <p>
-                Se desarrollo la aplicación con el fin de agilizar el proceso de otorgar el crédito 
-                lo más rápido posible al cliente. 
-            </p>
-            <P>
-            La aplicación tiene la funcionalidad de adjuntar las copias de los documentos proporcionados 
-            por el cliente y subirlos al Sistema. Se implemento esto con la <b>API-DROPBOX</b>, ya que los documentos
-            son almacenados en Dropbox.
-            </p>
-            <p>
-                Estás mismas funcionalidades se realizaron en el sitio web del cliente implamentadas con la tecnologías 
-                <b>PHP en el Back End</b> y <b>Vue Js en el Front End</b>.
-            </p>
-            <p>
-                La App fue desarrollada con el lenguaje de programación JAVA. Funciona OFFlINE.
-            </p>
-            <P>
-                A continuación se agregan un conjunto de imágenes de dicha applicación:
-            </P>
-
-       
-        </b-row>
-
-        <b-row class="m-4"> 
-                <b-col>
-                  <b-img thumbnail fluid src="/images/attendo1.png" width="600" alt="Image 1"></b-img>
-                </b-col>
-                <b-col>
-                  <b-img thumbnail fluid src="/images/attendo2.png" width="600" alt="Image 2"></b-img>
-                </b-col>
-               
-        </b-row>
-
-        <b-row class="m-4"> 
-                <b-col>
-                  <b-img thumbnail fluid src="/images/attendo3.png" width="600" alt="Image 3"></b-img>
-                </b-col>
-                <b-col>
-                    <b-img thumbnail fluid src="/images/attendo4.png" width="600" alt="Image 1"></b-img>
-                </b-col>
-        </b-row>
-
-        <b-carousel
-                  id="carousel-1"
-                  v-model="slide"
-                  :interval="4000"
-                  controls
-                  indicators
-                  background="#ffffff"
-                  img-width="900"
-                  img-height="900"
-                  style="text-shadow: 1px 1px 2px #333;"
-                  @sliding-start="onSlideStart"
-                  @sliding-end="onSlideEnd"
-                >
-                  
-                  <b-carousel-slide>
+            <div class="container">
+                
+                <b-row class="m-4">
+                    <h2>App Cobranza</h2>
+                    <p>
+                    Aplicación desarrollada para realizar seguimiento a los clientes con deudas. El usuario relizaba visitas y agregaba registro 
+                    sobre promesas o cobros de la deuda. Cada visita se registraba la localización, ya que en el sitio web se tenía un mapa para revisar 
+                    que los Usuario hayan hecho las visitas pertinentes.
+                    </p>
+                    <p>
+                    La App es para los dispositivos Android. El lenguaje de programación utilizado fue Java. Los Web Services fueron creados en PHP.
+                    La base de datos del sistema es My SQL. Se hizo uso de SQLite para almacenar los datos en el dispositivo e implementar el patrón repositorio
+                    Ya que una de las prinicipales funcionalidades de la App es que funcionará OFFLINE. En el sitio web se hizo uso de Google maps para registrar las visitas
+                    de los Usuarios de los Clientes.
+                    </p>
+                    <p>
+                    A continuación se muestran imágenes de la App:
+                    </p>
             
-                  <img
-                  slot="img"
-                  width="100%"
-                  height="900px"
-                  src="/images/alta1.png"
-                  alt="alta1"
-                >
+                </b-row>
+
+                <b-row class="m-4">
+
+                    <b-carousel
+                        id="carousel-1"
+                        v-model="slide"
+                        :interval="4000"
+                        controls
+                        indicators
+                        background="#ffffff"
+                        img-width="900"
+                        img-height="900"
+                        style="text-shadow: 1px 1px 2px #333;"
+                        @sliding-start="onSlideStart"
+                        @sliding-end="onSlideEnd">
+                        
+                        <b-carousel-slide>
+                    
+                            <img
+                                slot="img"
+                                width="100%"
+                                height="900px"
+                                src="/images/cobranza1.png"
+                                alt="alta1">
+            
+                        </b-carousel-slide>
+            
+                        <b-carousel-slide>
+                
+                            <img
+                                slot="img"
+                                width="100%"
+                                height="900px"
+                                src="/images/cobranza2.png"
+                                alt="alta2">
+                        </b-carousel-slide>
+
+                        <b-carousel-slide>
+            
+                            <img
+                                slot="img"
+                                width="100%"
+                                height="900px"
+                                src="/images/cobranza3.png"
+                                alt="alta3">
+                
+                        </b-carousel-slide>
+                        
+                    </b-carousel>
+
+                </b-row>
+
+                <b-row class="m-4">
+                    <p>
+                        Se muestran imágenes del sitio web:
+                    </p>    
+                </b-row>
+
+                <b-row class="m-4">
+
+                    <b-carousel
+                        id="carousel-1"
+                        v-model="slide"
+                        :interval="4000"
+                        controls
+                        indicators
+                        background="#ffffff"
+                        img-width="900"
+                        img-height="900"
+                        style="text-shadow: 1px 1px 2px #333;"
+                        @sliding-start="onSlideStart"
+                        @sliding-end="onSlideEnd">
+                        
+                        <b-carousel-slide>
+                    
+                            <img
+                                slot="img"
+                                width="100%"
+                                height="900px"
+                                src="/images/geo1.png"
+                                alt="alta1">
+            
+                        </b-carousel-slide>
+            
+                        <b-carousel-slide>
+                
+                            <img
+                                slot="img"
+                                width="100%"
+                                height="900px"
+                                src="/images/geo2.png"
+                                alt="alta2">
+                        </b-carousel-slide>
+
+                        <b-carousel-slide>
+            
+                            <img
+                                slot="img"
+                                width="100%"
+                                height="900px"
+                                src="/images/geo3.png"
+                                alt="alta3">
+                
+                        </b-carousel-slide>
+
+                        <b-carousel-slide>
+            
+                                <img
+                                    slot="img"
+                                    width="100%"
+                                    height="900px"
+                                    src="/images/geo4.png"
+                                    alt="alta3">
+                    
+                        </b-carousel-slide>
+
+                        <b-carousel-slide>
+            
+                                <img
+                                    slot="img"
+                                    width="100%"
+                                    height="900px"
+                                    src="/images/geo5.png"
+                                    alt="alta3">
+                    
+                        </b-carousel-slide>
+                        
+                    </b-carousel>
+                </b-row>
+                <b-row class="m-4">
+                        <router-link class="btn btn-success mt-4 float-left" to="/calixe">Atrás</router-link>
+                        <router-link class="btn btn-success mt-4 float-right" to="/alta">Siguiente</router-link>
+                </b-row>
+            </div>
+        </section>
     
-                  </b-carousel-slide>
-    
-                  <b-carousel-slide>
-          
-                <img
-                slot="img"
-                width="100%"
-                height="900px"
-                src="/images/alta2.png"
-                alt="alta2"
-              >
-                </b-carousel-slide>
-                <b-carousel-slide>
-    
-              <img
-                slot="img"
-                width="100%"
-                height="900px"
-                src="/images/alta3.png"
-                  alt="alta3"
-              >
-        
-              </b-carousel-slide>
-              <b-carousel-slide>
-    
-            <img
-            slot="img"
-            width="100%"
-            height="900px"
-            src="/images/alta5.png"
-            alt="alta4"
-          >
-      
-            </b-carousel-slide>
-        
-
-          
-          
-                </b-carousel>
-
-
-
-        </div>
-
-      
-    </section>
-       
     </div>
   
-  </script>
+</script>
