@@ -26,52 +26,57 @@
 
                 <b-row class="m-4">
 
-                    <b-carousel
-                        id="carousel-1"
-                        v-model="slide"
-                        :interval="4000"
-                        controls
-                        indicators
-                        background="#ffffff"
-                        img-width="900"
-                        img-height="900"
-                        style="text-shadow: 1px 1px 2px #333;"
-                        @sliding-start="onSlideStart"
-                        @sliding-end="onSlideEnd">
+                    <b-col></b-col>
+                    <b-col>
+                        <b-carousel
+                            id="carousel-1"
+                            v-model="slide"
+                            :interval="4000"
+                            controls
+                            indicators
+                            background="#ffffff"
+                            img-width="900"
+                            img-height="900"
+                            style="text-shadow: 1px 1px 2px #333;"
+                            @sliding-start="onSlideStart"
+                            @sliding-end="onSlideEnd">
+                            
+                            <b-carousel-slide>
                         
-                        <b-carousel-slide>
+                                <img
+                                    class=""
+                                    slot="img"
+                                    width="100%"
+                                    height="900px"
+                                    src="/images/cobranza1.jpg"
+                                    alt="alta1">
+                
+                            </b-carousel-slide>
+                
+                            <b-carousel-slide>
                     
-                            <img
-                                slot="img"
-                                width="100%"
-                                height="900px"
-                                src="/images/cobranza1.jpg"
-                                alt="alta1">
-            
-                        </b-carousel-slide>
-            
-                        <b-carousel-slide>
-                
-                            <img
-                                slot="img"
-                                width="100%"
-                                height="900px"
-                                src="/images/cobranza2.jpg"
-                                alt="alta2">
-                        </b-carousel-slide>
+                                <img
+                                    slot="img"
+                                    width="100%"
+                                    height="900px"
+                                    src="/images/cobranza2.jpg"
+                                    alt="alta2">
+                            </b-carousel-slide>
 
-                        <b-carousel-slide>
-            
-                            <img
-                                slot="img"
-                                width="100%"
-                                height="900px"
-                                src="/images/cobranza3.jpg"
-                                alt="alta3">
+                            <b-carousel-slide>
                 
-                        </b-carousel-slide>
-                        
-                    </b-carousel>
+                                <img
+                                    slot="img"
+                                    width="100%"
+                                    height="900px"
+                                    src="/images/cobranza3.jpg"
+                                    alt="alta3">
+                    
+                            </b-carousel-slide>
+                            
+                        </b-carousel>
+                    </b-col>
+                    <b-col></b-col>
 
                 </b-row>
 
@@ -82,7 +87,8 @@
                 </b-row>
 
                 <b-row class="m-4">
-
+                    <b-col></b-col>
+                    <b-col>
                     <b-carousel
                         id="carousel-1"
                         v-model="slide"
@@ -151,6 +157,8 @@
                         </b-carousel-slide>
                         
                     </b-carousel>
+                    </b-col>
+                    <b-col></b-col>
                 </b-row>
                
                 <b-row class="m-4">
